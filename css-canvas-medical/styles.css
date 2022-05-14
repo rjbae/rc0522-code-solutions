@@ -59,6 +59,7 @@ a {
 
 .hero-section {
   width: 1400px;
+  position: relative;
 }
 
 .hero-image {
@@ -73,7 +74,7 @@ a {
 .hero-text {
   width: 40%;
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   left: 175px;
   color: white;
   font-family: Avenir, sans-serif;
@@ -83,7 +84,7 @@ a {
 
 .hero-header {
   position: absolute;
-  bottom: 475px;
+  bottom: 500px;
   left: 175px;
   width: 40%;
   font-family: "Tiempos Headline", serif;
@@ -102,7 +103,7 @@ a {
   border: none;
   position: absolute;
   left: 175px;
-  bottom: 120px;
+  bottom: 175px;
 }
 
 .clinicians-section {
@@ -165,4 +166,56 @@ a {
   border-radius: 5%;
   margin-top: 35px;
   margin-left: 350px;
+  border: none;
+}
+
+.bottom-section {
+  background-color: rgb(91 91 91);
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.white-logo {
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-bottom: 30px;
+  width: 16%;
+}
+
+.address {
+  padding-left: 90px;
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+}
+
+.first-bottom-nav {
+  display: inline-block;
+  list-style: none;
+  margin-left: 700px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 160px;
+}
+
+.second-bottom-nav {
+  display: inline-block;
+  list-style: none;
+  margin-left: 200px;
+  line-height: 40px;
+  position: absolute;
+  left: 800px;
+  bottom: 80px;
+}
+
+.footer {
+  color: black;
+  padding-left: 10px;
+  margin-left: 60px;
+}
+
+footer {
+  background-color: rgb(211 211 211 / 73.8%);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
