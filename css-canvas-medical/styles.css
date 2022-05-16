@@ -49,7 +49,7 @@ a {
 .contact-button {
   height: 40px;
   width: 110px;
-  background-color: #355691;
+  background-color: #12346efd;
   color: white;
   font-family: Avenir, sans-serif;
   font-size: 16px;
@@ -95,7 +95,7 @@ a {
 .get-started {
   height: 50px;
   width: 180px;
-  background-color: #355691;
+  background-color: #12346efd;
   color: white;
   font-family: Avenir, sans-serif;
   font-size: 20px;
@@ -107,7 +107,7 @@ a {
 }
 
 .clinicians-section {
-  background-color: rgb(211 211 211 / 73.8%);
+  background-color: rgb(211 211 211 / 26.2%);
   padding-bottom: 50px;
   margin-bottom: 40px;
 }
@@ -116,7 +116,7 @@ a {
   text-align: center;
   color: rgb(0 0 0 / 54.1%);
   font-family: "Tiempos Headline", serif;
-  font-size: 25px;
+  font-size: 32px;
   padding-top: 60px;
 }
 
@@ -125,7 +125,7 @@ a {
   color: rgb(0 0 0 / 54.1%);
   font-family: Avenir, sans-serif;
   font-size: 14px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .clinic-location > li {
@@ -159,7 +159,7 @@ a {
 .started-button {
   height: 50px;
   width: 180px;
-  background-color: #355691;
+  background-color: #12346efd;
   color: white;
   font-family: Avenir, sans-serif;
   font-size: 20px;
