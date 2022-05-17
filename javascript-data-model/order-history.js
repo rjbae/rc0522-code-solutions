@@ -75,3 +75,5 @@ var orderHistory = [
     ]
   }
 ];
+
+console.log(orderHistory);
