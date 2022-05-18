@@ -49,7 +49,7 @@ function isOldEnoughToDrive(person) {
 }
 
 function isOldEnoughToDrinkAndDrive(person) {
-  if (person.age >= 0) {
+  if (person.age) {
     return false;
   }
 }
