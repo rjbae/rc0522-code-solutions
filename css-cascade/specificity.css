@@ -10,10 +10,10 @@ p {
   color: green;
 }
 
-#timbl {
-  color: red;
-}
-
 #verou {
   color: black !important;
+}
+
+#timbl {
+  color: red;
 }
