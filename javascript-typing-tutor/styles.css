@@ -1,0 +1,32 @@
+.phrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+span {
+  padding-bottom: 3px;
+}
+
+.correct {
+  color: green;
+}
+
+.initial-underline {
+  border-bottom: 3px solid black;
+}
+
+.incorrect {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+.underline-correct {
+  border-bottom: 3px solid black;
+}
