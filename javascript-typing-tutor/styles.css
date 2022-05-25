@@ -10,10 +10,23 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+span {
+  padding-bottom: 3px;
+}
+
 .correct {
   color: green;
 }
 
+.initial-underline {
+  border-bottom: 3px solid black;
+}
+
 .incorrect {
   color: red;
+  border-bottom: 3px solid red;
+}
+
+.underline-correct {
+  border-bottom: 3px solid black;
 }
