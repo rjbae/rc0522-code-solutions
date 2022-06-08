@@ -7,7 +7,7 @@ var $body = document.querySelector('body');
 
 var interval;
 function startCarousel() {
-  interval = setInterval(carousel, 4000);
+  interval = setInterval(carousel, 3000);
 }
 startCarousel();
 
