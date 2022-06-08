@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: skyblue;
+}
+
+section {
+  margin-top: 2em;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.carousel > ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+i {
+  cursor: pointer;
+  position: absolute;
+}
+
+.fa-chevron-left {
+  left: 4em;
+  color: blue;
+}
+
+.fa-chevron-right {
+  right: 4em;
+  color: blue;
+}
+
+.progress-dots {
+  position: absolute;
+  top: 31em;
+}
+
+span {
+  cursor: pointer;
+  margin: 3px;
+  margin-top: 20px;
+  color: blue;
+}
+
+.border {
+  border: 8px solid orangered;
+  width: 70%;
+  margin: auto;
+}
