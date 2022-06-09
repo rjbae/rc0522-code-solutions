@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <div class="carousel border">
+      <i class="fa-solid fa-chevron-left fa-4x"></i>
+      <i class="fa-solid fa-chevron-right fa-4x"></i>
+      <ul class="images">
+        <li class="image" data-img="0">
+          <img src="images/001.png" alt="Bulbasaur">
+        </li>
+        <li class="image hidden" data-img="1">
+          <img src="images/004.png" alt="Charizard">
+        </li>
+        <li class="image hidden" data-img="2">
+          <img src="images/007.png" alt="Squirtle">
+        </li>
+        <li class="image hidden" data-img="3">
+          <img src="images/025.png" alt="Pikachu">
+        </li>
+        <li class="image hidden" data-img="4">
+          <img src="images/039.png" alt="Jiggly Puff">
+        </li>
+      </ul>
+      <div class="progress-dots">
+        <span class="fa-solid fa-circle" data-img="0"></span>
+        <span class="fa-regular fa-circle" data-img="1"></span>
+        <span class="fa-regular fa-circle" data-img="2"></span>
+        <span class="fa-regular fa-circle" data-img="3"></span>
+        <span class="fa-regular fa-circle" data-img="4"></span>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
