@@ -1,1 +1,1 @@
-console.log('STOP THAT!');
+console.log(process.argv[2]);
