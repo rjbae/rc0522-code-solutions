@@ -5,5 +5,6 @@ SELECT "g"."name" AS "genreName",
   JOIN "films" AS "f" USING ("filmId")
   JOIN "castMembers" USING ("filmId")
   JOIN "actors" AS "a" USING ("actorId")
-  WHERE "a"."actorId" = 178
+  WHERE "a"."firstName" = 'Lisa'
+    AND "a"."lastName" = 'Monroe'
 GROUP BY "g"."genreId";
