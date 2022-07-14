@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  padding: 1.25rem;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  box-shadow: 0 0 5px 2px black;
+}
+
+.btn:active {
+  transform: translateY(0.5rem);
+}
+
+.btn-cool {
+  background-color: plum;
+}
+
+.btn-neutral {
+  background-color: salmon;
+}
+
+.btn-warm {
+  background-color: orange;
+  color: black;
+}
+
+.btn-hot {
+  background-color: yellow;
+  color: black;
+}
+
+.btn-fuego {
+  background-color: white;
+  color: black;
+}
