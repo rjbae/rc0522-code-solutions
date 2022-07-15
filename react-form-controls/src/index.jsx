@@ -14,11 +14,11 @@ class RegistrationForm extends React.Component {
   }
 
   handleUsernameChange(event) {
-    this.setState({ username: event.target.value, password: this.state.password });
+    this.setState({ username: event.target.value });
   }
 
   handlePasswordChange(event) {
-    this.setState({ username: this.state.username, password: event.target.value });
+    this.setState({ password: event.target.value });
   }
 
   handleSubmit(event) {
@@ -37,7 +37,7 @@ class RegistrationForm extends React.Component {
           Password:
         <input type='password' value={this.state.password} onChange={this.handlePasswordChange} ></input>
         </label>
-        <button type='submit' value='Submit'>Sign Up</button>
+        <button type='submit'>Sign Up</button>
       </form>
     );
   }
