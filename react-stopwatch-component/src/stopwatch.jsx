@@ -8,10 +8,10 @@ class StopWatch extends React.Component {
       timer: 0,
       interval: null
     };
-    this.handleClick.bind(this);
-    this.playWatch.bind(this);
-    this.pauseWatch.bind(this);
-    this.resetWatch.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.playWatch = this.playWatch.bind(this);
+    this.pauseWatch = this.pauseWatch.bind(this);
+    this.resetWatch = this.resetWatch.bind(this);
   }
 
   handleClick() {
