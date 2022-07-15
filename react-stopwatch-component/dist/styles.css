@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.watch {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid black;
+  font-size: 2rem;
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: white;
+}
+
+i {
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.count {
+  position: absolute;
+  margin-bottom: 7rem;
+  font-size: 3rem;
+}
