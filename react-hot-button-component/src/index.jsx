@@ -9,26 +9,27 @@ class HotButton extends React.Component {
   }
 
   handleClick() {
-    let count = this.state.clickCount;
-    count++;
+    const count = this.state.clickCount + 1;
     this.setState({ clickCount: count });
   }
 
   render() {
     const count = this.state.clickCount;
+    let btnClass = '';
     if (count <= 3) {
-      return <button onClick={this.handleClick} className='btn'>Hot Button</button>;
+      btnClass = 'btn';
     } else if (count <= 6) {
-      return <button onClick={this.handleClick} className='btn btn-cool'>Hot Button</button>;
+      btnClass = 'btn-cool';
     } else if (count <= 9) {
-      return <button onClick={this.handleClick} className='btn btn-neutral'>Hot Button</button>;
+      btnClass = 'btn-neutral';
     } else if (count <= 12) {
-      return <button onClick={this.handleClick} className='btn btn-warm'>Hot Button</button>;
+      btnClass = 'btn-warm';
     } else if (count <= 15) {
-      return <button onClick={this.handleClick} className='btn btn-hot'>Hot Button</button>;
+      btnClass = 'btn-hot';
     } else if (count <= 18) {
-      return <button onClick={this.handleClick} className='btn btn-fuego'>Hot Button</button>;
+      btnClass = 'btn-fuego';
     }
+    return <button onClick={this.handleClick} className={`btn ${btnClass}`}>Hot Button</button>;
   }
 }
 
