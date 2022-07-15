@@ -8,34 +8,23 @@ class ToggleSwitch extends React.Component {
   }
 
   handleClick() {
-    if (this.state.isClicked) {
-      this.setState({ isClicked: false });
-    } else {
-      this.setState({ isClicked: true });
-    }
+    this.setState({ isClicked: !this.state.isClicked });
   }
 
   render() {
+    let status = 'off';
+
     if (!this.state.isClicked) {
-      return (
-        <div className='container background-on'>
-          <div className='on'>
-            <button className='switch' onClick={this.handleClick}></button>
-          </div>
-          <p>ON</p>
-        </div>
-      );
-    } else {
-      return (
-        <div className='container background-off'>
-          <div className='off'>
-            <button className='switch-off' onClick={this.handleClick}></button>
-          </div>
-          <p>OFF</p>
-        </div>
-      );
+      status = 'on';
     }
+    return (
+      <div className={`container background-${status}`}>
+        <div className={status}>
+          <button className={`switch-${status}`} onClick={this.handleClick}></button>
+        </div>
+        <p>{status.toUpperCase()}</p>
+    </div>
+    );
   }
 }
-
 export default ToggleSwitch;
