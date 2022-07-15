@@ -5,7 +5,8 @@ class StopWatch extends React.Component {
     super(props);
     this.state = {
       isClicked: false,
-      timer: 0
+      timer: 0,
+      interval: null
     };
     this.handleClick.bind(this);
     this.playWatch.bind(this);
@@ -14,43 +15,48 @@ class StopWatch extends React.Component {
   }
 
   handleClick() {
-    if (this.state.isClicked) {
-      this.pauseWatch();
-    } else {
+    if (!this.state.isClicked) {
       this.playWatch();
+    } else {
+      this.pauseWatch();
     }
   }
 
   playWatch() {
-    this.interval = setInterval(() => {
+    const intervalCount = setInterval(() => {
       this.setState({ isClicked: this.state.isClicked, timer: this.state.timer + 1 });
     }, 1000);
-    this.setState({ isClicked: true, timer: this.state.timer });
+    this.setState({ isClicked: true, timer: this.state.timer, interval: intervalCount });
   }
 
   pauseWatch() {
-    clearInterval(this.interval);
+    clearInterval(this.state.interval);
     this.setState({ isClicked: false, timer: this.state.timer });
   }
 
   resetWatch() {
     if (!this.state.isClicked) {
-      this.setState({ isClicked: false, timer: this.state.timer });
+      this.setState({ isClicked: this.state.isClicked, timer: 0 });
     }
   }
 
   render() {
     let icon = '';
     const count = this.state.timer;
-    if (!this.state.isClicked) {
-      icon = 'fa-solid fa-play fa-2x';
+
+    if (this.state.isClicked) {
+      icon = 'fa-pause fa-2x';
     } else {
-      icon = ' fa-solid fa-pause fa-2x';
+      icon = 'fa-play fa-2x';
     }
+
     return (
       <div className='container'>
-        <button className='watch' onClick={this.resetWatch}>{count}</button>
-        <i className={`${icon}`} onClick={this.handleClick}></i>
+          <p className='count'>{count}</p>
+          <button className='watch' onClick={this.resetWatch}></button>
+        <div>
+          <i className={`fas ${icon}`} onClick={this.handleClick}></i>
+        </div>
       </div>
     );
   }

@@ -21,3 +21,9 @@ i {
   text-align: center;
   margin-top: 2rem;
 }
+
+.count {
+  position: absolute;
+  margin-bottom: 7rem;
+  font-size: 3rem;
+}
