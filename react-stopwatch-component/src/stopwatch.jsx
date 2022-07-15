@@ -24,19 +24,19 @@ class StopWatch extends React.Component {
 
   playWatch() {
     const intervalCount = setInterval(() => {
-      this.setState({ isClicked: this.state.isClicked, timer: this.state.timer + 1 });
+      this.setState({ timer: this.state.timer + 1 });
     }, 1000);
-    this.setState({ isClicked: true, timer: this.state.timer, interval: intervalCount });
+    this.setState({ isClicked: true, interval: intervalCount });
   }
 
   pauseWatch() {
     clearInterval(this.state.interval);
-    this.setState({ isClicked: false, timer: this.state.timer });
+    this.setState({ isClicked: false });
   }
 
   resetWatch() {
     if (!this.state.isClicked) {
-      this.setState({ isClicked: this.state.isClicked, timer: 0 });
+      this.setState({ timer: 0 });
     }
   }
 
