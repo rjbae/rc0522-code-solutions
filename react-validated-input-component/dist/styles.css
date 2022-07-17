@@ -1,0 +1,31 @@
+.label {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 1rem;
+}
+
+.password-field {
+  border: 2px solid black;
+  height: 1.5rem;
+  width: 10rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.fas {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.fa-x {
+  color: red;
+}
+
+.error-message {
+  font-family: "Comic Sans MS", sans-serif;
+  color: red;
+  font-size: 0.75rem;
+}
+
+.fa-check {
+  color: green;
+}
