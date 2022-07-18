@@ -6,7 +6,7 @@ const app = express();
 const joinPath = path.join(__dirname, './public');
 console.log(joinPath);
 
-const expressStatic = express.static('./public');
+const expressStatic = express.static(joinPath);
 app.use(expressStatic);
 
 app.listen(3000, () => {
