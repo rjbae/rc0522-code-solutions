@@ -28,21 +28,20 @@ class Accordion extends React.Component {
   }
 
   handleClick(event) {
-    const accordionId = accordionData.id;
-    if (event.target.key === accordionId) {
-      this.setState({ isClicked: true });
-    } else {
+    if (event.target.id === accordionData.id) {
       this.setState({ isClicked: false });
+    } else {
+      this.setState({ isClicked: true });
     }
   }
 
   render() {
-    const accordionInfo = accordionData.map(language => {
+    const accordionInfo = accordionData.map((language, index) => {
       return (
-        <div key={language.id}>
-          <button>{language.name}</button>
+        <React.Fragment key={language.id}>
+          <button onClick={this.handleClick} className={language.id}>{language.name}</button>
           <p className='accordion-text'>{language.description}</p>
-        </div>
+        </React.Fragment>
       );
     });
 
