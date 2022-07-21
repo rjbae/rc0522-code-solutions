@@ -22,25 +22,31 @@ class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isClicked: false
+      isClicked: null
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(event) {
-    if (event.target.id === accordionData.id) {
-      this.setState({ isClicked: false });
+    if (this.state.isClicked === event.target.id) {
+      this.setState({ isClicked: null });
     } else {
-      this.setState({ isClicked: true });
+      this.setState({ isClicked: event.target.id });
     }
   }
 
   render() {
     const accordionInfo = accordionData.map((language, index) => {
+      let hidden;
+      if (this.state.isClicked === language.id) {
+        hidden = 'accordion-text';
+      } else {
+        hidden = 'accordion-text hidden';
+      }
       return (
         <React.Fragment key={language.id}>
-          <button onClick={this.handleClick} className={language.id}>{language.name}</button>
-          <p className='accordion-text'>{language.description}</p>
+          <button onClick={this.handleClick} id={language.id}>{language.name}</button>
+          <span className={hidden}>{language.description}</span>
         </React.Fragment>
       );
     });
