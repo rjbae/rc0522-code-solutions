@@ -1,0 +1,38 @@
+User can sign up:
+- User starts on home page.
+- Clicks on either "Sign Up" in navbar or "Register now" in the form.
+- Client re-renders to the sign up page.
+- User then enters a username and password.
+- Once submitted, a network request is sent with fetch.
+- Server receives a POST request
+- Server checks if username or password field is empty.
+- Throws an error if either one is.
+- If no errors occur, then the password is hashed.
+- After hashing, the username and password get stored in the database.
+- The database then returns the "userId", "username", and "createdAt" values
+- Page then re-renders into the Sign In page by changing the hash route value
+
+User can sign in:
+- User starts on home page
+- Enters the username and password they signed up with
+- Client sends a network request with fetch once the user submits their info
+- Server receives a POST request
+- Checks to see if the username or password field is empty, then throws an error if true.
+- If both fields are filled, then the database is searched for a matching username.
+- If there is not a matching username then the an error is thrown.
+- The server then verifies to see if the username matches with the password.
+- If they do not match, then an error is thrown.
+- If both the username and password match, a response is sent to the client.
+- Once the response is received, the client stores the token into local storage and re-renders the page.
+- The setState method is called and the user in state is set to the user object received by the server.
+- Client then renders the home page.
+
+User can stay signed in (even if they refresh the page):
+- User can stay signed in since the local storage already has user's token from when they signed in.
+- If a token is present then the home page is rendered to have a user be rick rolled.
+- If a token is not present then the page is redirected to the sign-in page.
+
+User can sign out:
+- User clicks on sign out in the top right corner of the navbar
+- User's token gets removed from local storage.
+- Home page re-renders and get redirected to the sign-in page.
