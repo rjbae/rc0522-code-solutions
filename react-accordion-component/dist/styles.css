@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 18rem;
+  height: 2rem;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.accordion-text {
+  width: 285px;
+  border: 2px solid black;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
